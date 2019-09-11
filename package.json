@@ -1,0 +1,15 @@
+{
+  "name": "react-observer-hook",
+  "version": "1.0.0",
+  "description": "Hook for intersection observer",
+  "repository": "JoaoInez/react-observer-hook",
+  "main": "index.js",
+  "keywords": [
+    "react",
+    "hook",
+    "intersection",
+    "observer"
+  ],
+  "author": "",
+  "license": "MIT"
+}
