@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-const useObserver = (once = false) => {
+const useObserver = (fn = null, once = false) => {
   const [visible, setVisible] = useState(false);
   const elem = useRef();
 
@@ -8,6 +8,7 @@ const useObserver = (once = false) => {
     const observer = new IntersectionObserver(([entry], _observer) => {
       if (entry.intersectionRatio > 0) {
         setVisible(true);
+        fn && fn();
         once && _observer.disconnect();
       } else {
         setVisible(false);
@@ -17,7 +18,7 @@ const useObserver = (once = false) => {
     elem && elem.current && observer.observe(elem.current);
 
     return () => observer.disconnect();
-  }, [once]);
+  }, [fn, once]);
 
   return [elem, visible];
 };
