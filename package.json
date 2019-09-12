@@ -1,6 +1,6 @@
 {
   "name": "react-observer-hook",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Hook for intersection observer",
   "repository": "JoaoInez/react-observer-hook",
   "main": "index.js",
