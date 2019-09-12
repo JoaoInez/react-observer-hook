@@ -11,5 +11,8 @@
     "observer"
   ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.9.0"
+  }
 }
