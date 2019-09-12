@@ -1,11 +1,12 @@
 # react-observer-hook
 
 Simple hook that returns whether the element is in view or not.
+
 ## Example
 
 ```javascript
 import React, { useRef, useEffect } from "react";
-import { useObserver } from "./hooks/observer";
+import { useObserver } from "react-observer-hook";
 
 const App = () => {
   const elem = useRef();
